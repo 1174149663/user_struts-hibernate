@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<!-- 修改动态方法的调用,true 动态方法，false 非动态方法 -->
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+
+	<package name="default" namespace="/" extends="struts-default">
+		<action name="findallusers" class="userAction" method="findallusers">
+			<result name="list">/WEB-INF/jsp/list.jsp</result>
+		</action>
+		<action name="info" class="userAction" method="info">
+			<result name="query">/WEB-INF/jsp/query.jsp</result>
+			<result name="queryfail">/WEB-INF/jsp/queryfail.jsp</result>
+		</action>
+		<action name="to_add" class="userAction" method="to_add">
+			<result name="toadd">/WEB-INF/jsp/add.jsp</result>
+		</action>
+		<action name="add" class="userAction" method="add">
+			<result name="list">/WEB-INF/jsp/add.jsp</result>
+		</action>
+		<action name="userAnalyze" class="userAction" method="userAnalyze">
+			<result name="userAnalyze">/WEB-INF/jsp/userAnalyze.jsp</result>
+		</action>
+		<action name="delete" class="userAction" method="delete">
+			<result name="list">/WEB-INF/jsp/list.jsp</result>
+		</action>
+		<action name="to_edit" class="userAction" method="to_edit">
+			<result name="update">/WEB-INF/jsp/update.jsp</result>
+		</action>
+		<action name="do_edit" class="userAction" method="do_edit">
+			<result name="list">/WEB-INF/jsp/list.jsp</result>
+		</action>
+	</package>
+</struts>

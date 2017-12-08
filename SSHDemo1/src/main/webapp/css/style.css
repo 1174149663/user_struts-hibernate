@@ -1,0 +1,95 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.head {
+    height: 80px;
+    width: 100%;
+    background: #438eb9;
+}
+.right{
+	margin-left: 150px; 
+}
+.head img {
+    margin-left: 42px; 
+    height: 80px;
+    float: left;
+}
+
+.headname a {
+    float: right;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    margin: 15px;
+
+}
+.headname a:hover{
+    background: gray;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.headname {
+    color: #fff;
+    line-height: 2;
+    font-size: 35px;
+}
+
+.left {
+    width: 120px;
+    height: 520px;
+    margin-left: 20px; 
+    margin-top: 10px; 
+    background: #eff0ef;
+    float: left;
+    border-radius: 2px;
+}
+
+.left img {
+    width: 120px;
+    height: 100px;
+    margin-top: 251px;
+    border-radius: 50px;
+}
+
+
+.left a {
+    font-size: 25px;
+    color: #000;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-left: 10px;
+    line-height: 2;
+}
+.left a:hover{
+    background: #ddd;
+}
+
+button{
+	margin-left: 2px; 
+}
+.box1,
+.box2 {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.box3 {
+    margin-left: 360px;
+}
+
+.box3 button {
+    margin-left: 40px;
+}
+
+.box1 input {
+    width: 500px;
+    height: 25px;
+}
+
+.money {
+    text-align: right;
+}
